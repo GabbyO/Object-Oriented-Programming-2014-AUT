@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context=".MainActivity"
+    android:background="@drawable/background1" >
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:max="10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_centerHorizontal="true"
+        android:text="Brightness"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="ADJUST"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="VIBRATE"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+    
+
+    <Button
+        android:id="@+id/BACKbutton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:layout_toLeftOf="@+id/TextView01"
+        android:text="BACK" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="ToggleButton" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="AUDIO"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+
+    <ToggleButton
+        android:id="@+id/ToggleButton01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleButton1"
+        android:layout_below="@+id/TextView02"
+        android:text="ToggleButton" />
+
+</RelativeLayout>
